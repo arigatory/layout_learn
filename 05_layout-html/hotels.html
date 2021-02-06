@@ -7,17 +7,14 @@
   <title>Lagoona</title>
 </head>
 
-<body style="background-color: #f1f1f1">
-
+<body class="body">
   <header class="header">
     <div class="container">
       <div>
-        <a href="" class="logo">
-          <img src="img\Logo.png" alt="Логотип" class="logo-img">
-        </a>
-        <div class="phone">
+        <img src="img\Logo.png" alt="Логотип" class="logo-img">
+        <a  href="tel:номер" class="phone">
           +7 495 322 54 48
-        </div>
+        </a>
         <a href="">Личный кабинет</a>
       </div>
       <div>
@@ -42,8 +39,9 @@
               <a href="" class="nav-link">Контакты</a>
             </li>
           </ul>
+          <input type="text" placeholder="Поиск">
+          <button class="search-btn"></button>
         </nav>
-        <input type="text" placeholder="Поиск">
       </div>
     </div>
   </header>
@@ -55,24 +53,12 @@
           <h2 class="normal-header">
             Быстрая бронь
           </h2>
-          <ul>
-            <li>
-              <input class="fast-reservation-input" placeholder="Город">
-            </li>
-            <li>
-              <input class="fast-reservation-input" placeholder="Категория номера">
-            </li>
-            <li>
-              <input class="fast-reservation-input" placeholder="Дата заселения" type="date">
-            </li>
-            <li>
-              <input class="fast-reservation-input" placeholder="Количество ночей" type="number">
-            </li>
-            <li>
-              <input class="fast-reservation-input" placeholder="Количество гостей" type="number">
-            </li>
-          </ul>
-          <a href="" class="btn">Найти номер</a>
+          <input class="fast-reservation-input" placeholder="Город">
+          <input class="fast-reservation-input" placeholder="Категория номера">
+          <input class="fast-reservation-input" placeholder="Дата заселения" type="date">
+          <input class="fast-reservation-input" placeholder="Количество ночей" type="number">
+          <input class="fast-reservation-input" placeholder="Количество гостей" type="number">
+          <button class="find-room-button">Найти номер</button>
           <div class="offer-amount">
             <span class="offer-number">
               9756
@@ -88,9 +74,9 @@
             Спецпредложение
           </h2>
           <div class="offer-card">
-            <h2 class="offer-big-text">
+            <h3 class="offer-big-text">
               Номера категории люкс
-            </h2>
+            </h3>
             <div class="offer-price">
               от 5 000 р
             </div>
@@ -122,28 +108,28 @@
           <li class="services-card">
             <img src="img/10.png" alt="" class="services-card-image">
             <div class="services-card-body">
-              <a href="" class="services-card-link">Эксклюзивное обслуживание</a>
-            <div class="services-card-description">Равным образом постоянный количественный рост и сфера нашей активности</div>
+              <h3><a href="" class="services-card-link">Эксклюзивное обслуживание</a></h3>
+            <p class="services-card-description">Равным образом постоянный количественный рост и сфера нашей активности</p>
             </div>
           </li>
           <li class="services-card">
             <img src="img/15.png" alt="" class="services-card-image">
             <div class="services-card-body">
-              <a href="" class="services-card-link">Аренда банкетных залов</a>
-            <div class="services-card-description">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</div>
+              <h3><a href="" class="services-card-link">Аренда банкетных залов</a></h3>
+            <p class="services-card-description">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
             </div>
           </li>
           <li class="services-card">
             <img src="img/12.png" alt="" class="services-card-image">
             <div class="services-card-body">
-              <a href="" class="services-card-link">Сауна, бассейны, бани, фитнес-залы</a>
-            <div class="services-card-description">Не следует, однако забывать, что начало повседневной работы по формированию позиции</div>
+              <h3><a href="" class="services-card-link">Сауна, бассейны, бани, фитнес-залы</a></h3>
+            <p class="services-card-description">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
             </div>
           </li>
           <li class="services-card">
             <img src="img/11.png" alt="" class="services-card-image">
             <div class="services-card-body">
-              <a href="" class="services-card-link">Эксклюзивное обслуживание</a>
+              <h3></h3><a href="" class="services-card-link">Эксклюзивное обслуживание</a>
             <div class="services-card-description">Не следует, однако забывать, что начало повседневной работы по формированию позиции</div>
             </div>
           </li>
@@ -158,52 +144,52 @@
         </h2>
         <ul class="advantages-cards">
           <li class="advantages-card">
-            <img src="img/bathtub.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/bathtub.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
           <li class="advantages-card">
-            <img src="img/hanger.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/hanger.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
           <li class="advantages-card">
-            <img src="img/heating.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/heating.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
           <li class="advantages-card">
-            <img src="img/hotel-key.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/hotel-key.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
           <li class="advantages-card">
-            <img src="img/parking.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/parking.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
           <li class="advantages-card">
-            <img src="img/reception.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/reception.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
           <li class="advantages-card">
-            <img src="img/security-box.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/security-box.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
           <li class="advantages-card">
-            <img src="img/swimming-pool.svg" alt="bath" class="advantages-card-pic">
-            <div class="advantages-card-description">
+            <div style="background-image: url(img/swimming-pool.svg);" class="advantages-cards"></div>
+            <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
-            </div>
+            </p>
           </li>
         </ul>
       </div>
@@ -220,7 +206,15 @@
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
                 <div class="allocation-card-price">
-                  от 4 698 р / ночь
+                  <span>
+                    от
+                  </span>
+                  <span>
+                    4 698 р
+                  </span>
+                  <span>
+                    / ночь
+                  </span>
                 </div>
                 <div class="stars">
                   <img src="img/i-star.png" alt="Рейтинг отеля 4 из 5">
@@ -230,9 +224,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -256,9 +250,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -282,9 +276,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -308,9 +302,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -334,9 +328,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -360,9 +354,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -386,9 +380,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -412,9 +406,9 @@
                   <img src="img/i-star-empty.png" alt="">
                 </div>
               </div>
-              <div class="allocation-card-title">
+              <h3 class="allocation-card-title">
                 Lagoona española
-              </div>
+              </h3>
               <div class="allocation-card-location">
                 Барселона, Испания
               </div>
@@ -424,7 +418,6 @@
             </div>
           </li>
           <li class="allocation-card allocation-card-last">
-            <img src="img/41.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <a href="" class="all-allocation-variants-card">
                 Посмотреть все варианты
