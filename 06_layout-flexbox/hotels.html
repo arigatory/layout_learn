@@ -10,65 +10,68 @@
 </head>
 
 <body class="body">
-  <header class="header">
+  <header>
     <div class="container">
-      <div class="header-container">
+      <div class="header-head">
         <img src="img\Logo.png" alt="Логотип" class="logo-img">
-        <a  href="tel:номер" class="phone">
+        <a  href="tel:+74953225448" class="phone">
           +7 495 322 54 48
         </a>
         <a href="">Личный кабинет</a>
       </div>
-      <div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="" class="nav-link">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Преимущества</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Размещение</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Блог</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link">Контакты</a>
-            </li>
-          </ul>
-          <input type="text" placeholder="Поиск">
-          <button class="search-btn"></button>
-        </nav>
-      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Преимущества</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Размещение</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Контакты</a>
+          </li>
+        </ul>
+        <form class="search">
+          <input type="search" placeholder="Поиск">
+          <button class="search-button">
+          </button>
+        </form>
+      </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
+      <div class="container hero-content">
         <div class="fast-reservation">
           <h2 class="normal-header">
             Быстрая бронь
           </h2>
-          <input class="fast-reservation-input" placeholder="Город">
-          <input class="fast-reservation-input" placeholder="Категория номера">
-          <input class="fast-reservation-input" placeholder="Дата заселения" type="date">
-          <input class="fast-reservation-input" placeholder="Количество ночей" type="number">
-          <input class="fast-reservation-input" placeholder="Количество гостей" type="number">
-          <button class="find-room-button">Найти номер</button>
-          <div class="offer-amount">
-            <span class="offer-number">
-              9756
-            </span>
-            <div class="offer-amount-text">
-              предложений доступно
+          <form class="reservation">
+            <input class="fast-reservation-input" placeholder="Город">
+            <input class="fast-reservation-input" placeholder="Категория номера">
+            <input class="fast-reservation-input" placeholder="Дата заселения" type="date">
+            <input class="fast-reservation-input" placeholder="Количество ночей" type="number">
+            <input class="fast-reservation-input" placeholder="Количество гостей" type="number">
+            <button class="find-room-button">Найти номер</button>
+            <div class="offer-amount">
+              <span class="offer-number">
+                9756
+              </span>
+              <div class="offer-amount-text">
+                предложений доступно
+              </div>
             </div>
-          </div>
+          </form>
         </div>
 
         <div class="spetial-offer">
@@ -76,15 +79,17 @@
             Спецпредложение
           </h2>
           <div class="offer-card">
-            <h3 class="offer-big-text">
-              Номера категории люкс
-            </h3>
-            <div class="offer-price">
-              от 5 000 р
+            <div class="offer-content">
+              <h3 class="offer-big-text">
+                Номера категории люкс
+              </h3>
+              <div class="offer-price">
+                от 5 000 р
+              </div>
+              <a href="" class="offer-details-link">
+                Подробнее
+              </a>
             </div>
-            <a href="" class="offer-details-link">
-              Подробнее
-            </a>
           </div>
         </div>
       </div>
