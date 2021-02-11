@@ -153,23 +153,28 @@ html {
 
 .special-offer {
   width: 595px;
+  height: 543px;
 }
 
 .offer-card {
-  display: flex;
   background-image: url('../img/22.png');
+  background-position: bottom;
   width: 595px;
   height: 540px;
-  align-items: center;
+  padding-top: 255px;
+  padding-bottom: 30px;
+  padding-left: 43px;
 }
 
 .offer-content {
-  height: 30%;
+  width: 320px;
 }
 
 .offer-big-text {
   color: white;
   font-size: 66px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .offer-price {
