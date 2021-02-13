@@ -144,6 +144,7 @@ html {
 }
 
 .offer-number {
+  margin-left: 30px;
   display: inline-block;
 }
 
@@ -175,12 +176,170 @@ html {
   font-size: 66px;
   margin-block-start: 0;
   margin-block-end: 0;
+  line-height: 0.75;
 }
 
 .offer-price {
   color: white;
+  margin-top: 40px;
+  font-size: 35px;
+  display: inline-block;
 }
 
 .offer-details-link {
+  color: #ffcc66;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+/* ABOUT US */
+.about-us-description {
+  font-size: 16px;
+  width: 894px;
+  color: #666666;
+  margin-left: 45px;
+}
+
+/* SERVICES */
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-card {
+  display: inline-block;
+  margin-top: 25px;
+  flex: 1 0 45%;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.services-card-image {
+  width: 100%;
+}
+
+.services-card-link {
+  margin-top: 35px;
+  margin-left: 44px;
+  color:#cc9933;
+}
+
+.services-card-description {
+  margin-left: 44px;
+  color:#333333;
+  width: 394px;
+}
+
+
+/* advantages */
+.advantages-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-card {
+  background-color: white;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  padding: 40px;
+  flex: 1 0 20%;
+}
+
+.advantages-card-img {
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.advantages-card-description {
+  line-height: 1.7;
+  color:#333333;
+}
+
+
+/* Allocation */
+.allocation-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.allocation-card {
+  background-color: white;
+  border-radius: 12px;
+  width: 373px;
+  flex: 1 0 31%;
+  margin-top: 30px;
+}
+
+.allocation-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.allocation-card-body {
+  padding: 20px;
+}
+
+.allocation-card-1st-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allocation-card-title {
+  font-size: 16px;
+  color: #333333;
+}
+
+
+.allocation-card-location {
+  color:#666666;
+}
+
+
+.allocation-card-button {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 1;
+  background-color: white;
+  color:  #cc9933;
+  padding: 10px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #cc9933
+}
+
+.footer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #333333;
+  border-radius: 12px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 338px;
+  padding: 45px;
+}
+
+.footer-columt-left {
+  width: 345px;
+  line-height: 1.75;
+}
+
+.footer-text-link {
+  color:#cc9933;
+  display: block;
+}
+
+.footer-phones {
+  margin-top: 20px;
+}
+
+.footer-emails {
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin-top: 15px;
 }
