@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -227,9 +229,9 @@ html {
 }
 
 .services-card-description {
-  margin-left: 44px;
   color:#333333;
   width: 394px;
+  padding: 45px;
 }
 
 
