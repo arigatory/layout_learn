@@ -32,17 +32,17 @@ html {
 }
 
 
-/* .header-container {
-  display: flex;
-  align-items: center;
-  height: 100%;
-} */
+/* HEADER */
+.head {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
 
 .header-head {
   height: 60px;
-  margin-top: 30px;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .phone {
@@ -50,14 +50,16 @@ html {
   margin-left: 30px;
 }
 
+
+/* NAVIGATION */
 .nav {
-  margin-top: 30px;
   height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
-  padding: 0 25px;
   border-radius: 10px;
 }
 
@@ -102,8 +104,12 @@ html {
   cursor: pointer;
 }
 
+
+/* HERO */
 .hero-content {
   height: 620px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   display: flex;
   justify-content: space-between;
 }
@@ -114,8 +120,6 @@ html {
 
 .normal-header {
   height: 33px;
-  margin-left: 44px;
-  margin-top: 70px;
 }
 
 .reservation input {
