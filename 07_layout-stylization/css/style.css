@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* HEADER */
+.head {
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.header-head {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.phone {
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+
+/* NAVIGATION */
+.nav {
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.search {
+  position: relative;
+  width: 300px;
+  height: 50px;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  border: none;
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/search.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+/* HERO */
+.hero-content {
+  height: 620p35px и сверху 35p 35px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fast-reservation {
+  width: 40%;
+}
+
+.normal-header {
+  margin-bottom: 30px;
+  height: 33px;
+  padding-left: 45px;
+}
+
+.reservation input {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 23px;
+  padding: 20px;
+  background-color:white;
+  border-radius: 15px;
+  border: none;
+}
+
+.find-room-button {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #cc9933;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.offer-amount {
+  display: inline-block;
+}
+
+.offer-number {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.offer-amount-text {
+  display: inline-block;
+}
+
+.special-offer {
+  width: 595px;
+  height: 543px;
+}
+
+.offer-card {
+  background-image: url('../img/22.png');
+  background-position: bottom;
+  width: 595px;
+  height: 540px;
+  padding-top: 255px;
+  padding-bottom: 30px;
+  padding-left: 43px;
+}
+
+.offer-content {
+  width: 320px;
+}
+
+.offer-big-text {
+  color: white;
+  font-size: 66px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 0.75;
+}
+
+.offer-price {
+  color: white;
+  margin-top: 40px;
+  font-size: 35px;
+  display: inline-block;
+}
+
+.offer-details-link {
+  color: #ffcc66;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+/* ABOUT US */
+.about-us-description {
+  font-size: 16px;
+  width: 894px;
+  color: #666666;
+  margin-left: 45px;
+}
+
+/* SERVICES */
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-card {
+  display: inline-block;
+  margin-bottom: 25px;
+  flex: 1 0 45%;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.services-card:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+
+.services-card-image {
+  width: 100%;
+}
+
+.services-card-link {
+  margin-top: 35px;
+  margin-left: 44px;
+  color:#cc9933;
+}
+
+.services-card-description {
+  color:#333333;
+  width: 394px;
+  padding: 45px;
+}
+
+
+/* advantages */
+.advantages-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-card {
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 40px;
+  flex: 1 0 20%;
+}
+
+.advantages-card:not(:nth-child(4n)) {
+  margin-right: 20px;
+}
+
+.advantages-card-img {
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.advantages-card-description {
+  line-height: 1.7;
+  color:#333333;
+}
+
+
+/* Allocation */
+.allocation-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.allocation-card {
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 12px;
+  width: 373px;
+  flex: 1 0 31%;
+}
+
+.allocation-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.allocation-card-body {
+  padding: 20px;
+}
+
+.allocation-card-1st-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allocation-card-title {
+  font-size: 16px;
+  color: #333333;
+}
+
+
+.allocation-card-location {
+  color:#666666;
+}
+
+
+.allocation-card-button {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 1;
+  background-color: white;
+  color:  #cc9933;
+  padding: 10px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid #cc9933
+}
+
+.footer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #333333;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 338px;
+  padding: 45px;
+}
+
+.footer-columt-left {
+  width: 345px;
+  line-height: 1.75;
+}
+
+.footer-text-link {
+  color:#cc9933;
+  display: block;
+}
+
+.footer-phones {
+  margin-top: 20px;
+}
+
+.footer-emails {
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin-top: 15px;
+}
