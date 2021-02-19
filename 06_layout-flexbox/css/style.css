@@ -122,8 +122,9 @@ section {
 }
 
 .normal-header {
-  margin-bottom: 30px;
-  height: 33px;
+  margin-bottom: 25px;
+  font-size: 32px;
+  line-height: 40px;
   padding-left: 45px;
 }
 
