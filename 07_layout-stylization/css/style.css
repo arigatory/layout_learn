@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'MullerLight';
+  font-family: 'Muller';
   src: url('../fonts/MullerLight.woff2') format('woff2'),
     url('../fonts/MullerLight.woff') format('woff');
   font-display: swap;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'MullerRegular';
+  font-family: 'Muller';
   src: url('../fonts/MullerRegular.woff2') format('woff2'),
     url('../fonts/MullerRegular.woff') format('woff');
   font-display: swap;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: 'MullerBold';
+  font-family: 'Muller';
   src: url('../fonts/MullerBold.woff2') format('woff2'),
     url('../fonts/MullerBold.woff') format('woff');
   font-display: swap;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-  font-family: 'MullerMedium';
+  font-family: 'Muller';
   src: url('../fonts/MullerMedium.woff2') format('woff2'),
     url('../fonts/MullerMedium.woff') format('woff');
   font-display: swap;
@@ -38,7 +38,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'MullerRegular', sans-serif;
 }
 
 a {
@@ -59,6 +58,11 @@ html {
   background-color: #f1f1f1;
 }
 
+body {
+  color: #333;
+  font-family: 'Muller', sans-serif;
+}
+
 .container {
   max-width: 1170px;
   margin-right: auto;
@@ -67,7 +71,7 @@ html {
   padding-right: 15px;
 }
 
-section {
+.section {
   padding-top: 35px;
   padding-bottom: 35px;
 }
@@ -191,7 +195,7 @@ section {
 
 .reservation input {
   width: 100%;
-  height: 100%;
+  height: 70px;
   margin-bottom: 23px;
   padding: 20px;
   background-color:white;
@@ -202,14 +206,15 @@ section {
 .find-room-button {
   display: inline-block;
   margin-top: 24px;
+  padding: 25px;
   font-size: 16px;
-  line-height: 1;
+  line-height: 32px;
   background-color: #cc9933;
   color: white;
-  padding: 10px 30px;
   border-radius: 12px;
   cursor: pointer;
   border: none;
+  min-width: 159px;
 }
 
 .offer-amount {
@@ -219,6 +224,8 @@ section {
 .offer-number {
   margin-left: 30px;
   display: inline-block;
+  color:#cc9933;
+  font-weight: bold;
 }
 
 .offer-amount-text {
@@ -235,13 +242,13 @@ section {
   background-position: bottom;
   width: 595px;
   height: 540px;
-  padding-top: 255px;
+  padding-top: 260px;
   padding-bottom: 30px;
   padding-left: 43px;
 }
 
 .offer-content {
-  width: 320px;
+  width: 350px;
 }
 
 .offer-big-text {
@@ -249,27 +256,30 @@ section {
   font-size: 66px;
   margin-block-start: 0;
   margin-block-end: 0;
-  line-height: 0.75;
+  line-height: 58px;
+  margin-bottom: 40px;
 }
 
 .offer-price {
   color: white;
-  margin-top: 40px;
   font-size: 35px;
+  margin-right: 40px;
   display: inline-block;
 }
 
 .offer-details-link {
   color: #ffcc66;
+  padding-right: 15px;
   display: inline-block;
   font-size: 16px;
-  margin-left: 40px;
+  background: url(../img/arrow_right.png) right center no-repeat;
 }
 
 /* ABOUT US */
 .about-us-description {
   font-size: 16px;
-  width: 894px;
+  line-height:32px;
+  width: 880px;
   color: #666666;
   margin-left: 45px;
 }
@@ -295,6 +305,7 @@ section {
 
 .services-card-image {
   width: 100%;
+  display: block;
 }
 
 .services-card-body {
@@ -367,18 +378,30 @@ section {
   margin-right: 30px;
 }
 
+.allocation-card-pic{
+  display: block;
+}
+
 .allocation-card-body {
-  padding: 20px;
+  padding: 20px 45px 45px 45px;
 }
 
 .allocation-card-1st-row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.allocation-text-price {
+  font-size: 17px;
+  line-height: 32px;
+  font-weight: bold;
 }
 
 .allocation-card-title {
   font-size: 16px;
   color: #333333;
+  margin-bottom: 17px;
 }
 
 
@@ -405,13 +428,17 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 56px;
+  padding-left: 42px;
 }
 
 .all-allocation-variants-card {
   font-size: 22px;
   line-height: 32px;
   color: white;
+  font-weight: bold;
+  padding-right: 15px;
+  background: url(../img/arrow_right_white.png) right center no-repeat;
 }
 
 .footer {
