@@ -40,8 +40,8 @@
             <a href="" class="nav-link">Контакты</a>
           </li>
         </ul>
-        <form class="search">
-          <input type="search" placeholder="Поиск" class="search-input">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="search">
+          <input name="input" type="search" placeholder="Поиск" class="search-input">
           <button class="search-button">
           </button>
         </form>
@@ -57,7 +57,7 @@
             Быстрая бронь
           </h2>
           <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="reservation">
-            <input type="text" name="name" class="fast-reservation-input" placeholder="Город">
+            <input type="text" name="city" required class="fast-reservation-input" placeholder="Город">
             <select name="category" class="fast-reservation-input" placeholder="Категория номера">
               <option value="" disabled selected>Категория номера</option>
               <option>Стандартный</option>
