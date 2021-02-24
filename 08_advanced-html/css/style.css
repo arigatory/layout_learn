@@ -522,9 +522,19 @@ body {
   border: 1px solid #cc9933
 }
 
+.write-us {
+  border: none;
+}
+
+.write-us legend {
+  padding-left: 15px;
+}
 
 .write-us-form {
   width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .write-us-form input {
@@ -576,7 +586,7 @@ body {
 .footer-columt-left {
   width: 345px;
   line-height: 1.75;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .footer-text-link {
