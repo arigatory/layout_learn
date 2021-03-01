@@ -1,3 +1,6 @@
+:root {
+  --orange-color: #cc9933;
+}
 @font-face {
   font-family: 'Muller';
   src: url('../fonts/MullerLight.woff2') format('woff2'), url('../fonts/MullerLight.woff') format('woff');
@@ -72,6 +75,24 @@ body {
   padding-bottom: 35px;
 }
 
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: var(--orange-color);
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: var(--orange-color);
+}
 /* HEADER */
 
 .head {
@@ -105,7 +126,7 @@ body {
   text-align: right;
   font-size: 16px;
   line-height: 32px;
-  color: #cc9933;
+  color: var(--orange-color);
   font-weight: 500;
   background: url(../img/keyboard_tab.svg) left center no-repeat transparent;
   background-size: auto;
@@ -131,6 +152,13 @@ body {
 
 .nav-link {
   color: #333333;
+  transition: color 0.5s ease;
+  transition: font-weight 0.1s linear;
+
+}
+.nav-link:hover {
+  color: var(--orange-color);
+  font-weight:bold;
 }
 
 .nav-item:not(:last-child) {
@@ -201,18 +229,9 @@ body {
 }
 
 .find-room-button {
-  display: inline-block;
   margin-top: 24px;
-  font-size: 16px;
-  line-height: 32px;
-  background-color: #cc9933;
-  color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  border: none;
   min-width: 159px;
   height: 70px;
-  font-weight: bold;
 }
 
 .offer-amount {
@@ -222,7 +241,7 @@ body {
 .offer-number {
   margin-left: 30px;
   display: inline-block;
-  color: #cc9933;
+  color: var(--orange-color);
   font-weight: bold;
 }
 
@@ -294,9 +313,9 @@ body {
 .services-card {
   display: inline-block;
   margin-bottom: 25px;
-  flex: 1 0 45%;
   background-color: white;
   border-radius: 12px;
+  flex: 0 1 calc(50% - 1em);
 }
 
 .services-card:not(:nth-child(2n)) {
@@ -315,7 +334,7 @@ body {
 .services-card-link {
   margin-bottom: 20px;
   padding-right: 20px;
-  color: #cc9933;
+  color: var(--orange-color);
   font-size: 22px;
   line-height: 32px;
   background: url(../img/arrow_right.png) right center no-repeat;
@@ -340,11 +359,27 @@ body {
   margin-bottom: 20px;
   border-radius: 12px;
   padding: 40px;
-  flex: 1 0 20%;
+  flex: 0 1 calc(25% - 1em);
+  transition: background-color 0.3s ease;
 }
+
 
 .advantages-card:not(:nth-child(4n)) {
   margin-right: 20px;
+}
+
+.advantages-card:hover {
+  cursor: pointer;
+  background-color: var(--orange-color);
+  color: white;
+}
+
+.advantages-card:hover .advantages-card-description {
+  color: white;
+}
+
+.advantages-card:hover svg style .st0{
+  fill: white;
 }
 
 .advantages-card-img {
@@ -370,8 +405,7 @@ body {
   margin-bottom: 30px;
   background-color: white;
   border-radius: 12px;
-  width: 373px;
-  flex: 1 0 31%;
+  flex: 0 1 calc(31%);
 }
 
 .allocation-card:not(:nth-child(3n)) {
@@ -417,10 +451,10 @@ body {
   font-size: 16px;
   line-height: 32px;
   background-color: white;
-  color: #cc9933;
+  color: var(--orange-color);
   border-radius: 12px;
   cursor: pointer;
-  border: 1px solid #cc9933
+  border: 1px solid var(--orange-color);
 }
 
 .allocation-card-last {
@@ -430,9 +464,19 @@ body {
   justify-content: flex-end;
   padding-bottom: 56px;
   padding-left: 42px;
+  position: relative;
 }
 
-.all-allocation-variants-card {
+.all-allocation-variants-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.all-allocation-variants-link {
   font-size: 22px;
   line-height: 32px;
   color: white;
@@ -492,7 +536,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  color:#cc9933;
+  color:var(--orange-color);
 }
 
 .contacts-card-emails-info {
@@ -504,7 +548,7 @@ body {
 }
 
 .contacts-text-link {
-  color: #cc9933;
+  color: var(--orange-color);
   display: inline-block;
 }
 
@@ -516,10 +560,10 @@ body {
   line-height: 32px;
   font-weight: bold;
   background-color: white;
-  color: #cc9933;
+  color: var(--orange-color);
   border-radius: 12px;
   cursor: pointer;
-  border: 1px solid #cc9933
+  border: 1px solid var(--orange-color);
 }
 
 .write-us {
@@ -548,16 +592,7 @@ body {
 }
 
 .write-us-button {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 32px;
-  background-color: #cc9933;
-  color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  border: none;
   height: 70px;
-  font-weight: bold;
   width: 100%;
 }
 
@@ -590,7 +625,7 @@ body {
 }
 
 .footer-text-link {
-  color: #cc9933;
+  color: var(--orange-color);
   display: block;
 }
 
