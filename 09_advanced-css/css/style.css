@@ -1,6 +1,12 @@
 :root {
   --orange-color: #cc9933;
+  --light-orange-color: #ffcc66;
+  --gray-color: #666666;
+  --light-gray-color: #cccccc;
+  --dark-gray-color:#333333;
+  --background-color: #f1f1f1;
 }
+
 @font-face {
   font-family: 'Muller';
   src: url('../fonts/MullerLight.woff2') format('woff2'), url('../fonts/MullerLight.woff') format('woff');
@@ -41,6 +47,14 @@
 
 a {
   text-decoration: none;
+  transition: font-weight 0.1s linear;
+  border-radius: 12px;
+  padding: auto;
+}
+
+a:hover, .social-icon:hover {
+  font-weight: bold;
+  transform: scale(1.1,1.1) ;
 }
 
 ul {
@@ -54,7 +68,7 @@ img {
 }
 
 html {
-  background-color: #f1f1f1;
+  background-color: var(--background-color);
 }
 
 body {
@@ -117,7 +131,7 @@ body {
   margin-right: auto;
   font-size: 22px;
   line-height: 32px;
-  color: #666666;
+  color: var(--gray-color);
   font-weight: bold;
 }
 
@@ -151,7 +165,7 @@ body {
 }
 
 .nav-link {
-  color: #333333;
+  color: var(--dark-gray-color);
   transition: color 0.5s ease;
   transition: font-weight 0.1s linear;
 
@@ -175,10 +189,10 @@ body {
   width: 100%;
   height: 100%;
   padding-left: 10px;
-  background-color: #f1f1f1;
+  background-color: var(--background-color);
   border-radius: 15px;
   border: none;
-  color: #bebebe;
+  color: var(--dark-gray-color);
 }
 
 .search-button {
@@ -197,10 +211,13 @@ body {
   cursor: pointer;
 }
 
+.search-button:hover{
+  border: 1px solid var(--orange-color);
+}
+
 /* HERO */
 
 .hero-content {
-  height: 620p35px и сверху 35p 35px;
   padding-bottom: 35px;
   display: flex;
   justify-content: space-between;
@@ -286,7 +303,7 @@ body {
 }
 
 .offer-details-link {
-  color: #ffcc66;
+  color: var(--light-orange-color);
   padding-right: 15px;
   display: inline-block;
   font-size: 16px;
@@ -299,7 +316,7 @@ body {
   font-size: 16px;
   line-height: 32px;
   width: 880px;
-  color: #666666;
+  color: var(--gray-color);
   margin-left: 45px;
 }
 
@@ -341,7 +358,7 @@ body {
 }
 
 .services-card-description {
-  color: #333333;
+  color: var(--dark-gray-color);
   width: 394px;
   font-size: 16px;
   line-height: 32px;
@@ -391,7 +408,7 @@ body {
 .advantages-card-description {
   font-size: 16px;
   line-height: 32px;
-  color: #333333;
+  color: var(--dark-gray-color);
 }
 
 /* Allocation */
@@ -411,6 +428,11 @@ body {
 .allocation-card:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
+.allocation-card:not(:nth-last-child(n+4)) {
+  margin-bottom: 0;
+}
+
 
 .allocation-card-pic {
   display: block;
@@ -435,26 +457,34 @@ body {
 
 .allocation-card-title {
   font-size: 16px;
-  color: #333333;
+  color: var(--dark-gray-color);
   margin-bottom: 17px;
 }
 
 .allocation-card-location {
-  color: #666666;
+  color: var(--gray-color);
   margin-bottom: 26px;
+}
+
+.light-btn {
+  display: inline-block;
+  color: var(--orange-color);
+  font-size: 16px;
+  line-height: 32px;
+  background-color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid var(--orange-color);
+}
+
+.light-btn:hover {
+  background-color: var(--orange-color);
+  color: white;
 }
 
 .allocation-card-button {
   width: 100px;
   height: 41px;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 32px;
-  background-color: white;
-  color: var(--orange-color);
-  border-radius: 12px;
-  cursor: pointer;
-  border: 1px solid var(--orange-color);
 }
 
 .allocation-card-last {
@@ -487,6 +517,10 @@ body {
 
 /* CONTACTS */
 
+.section-contacts {
+padding-top: 35px;
+}
+
 .contacts-container {
   display: flex;
   justify-content: flex-start;
@@ -504,14 +538,14 @@ body {
 .contacts-card-item {
   padding-top: 26px;
   padding-bottom: 26px;
-  border-bottom: solid 1px #cccccc;
+  border-bottom: solid 1px var(--light-gray-color);
   display: flex;
   justify-content: flex-start;
 }
 
 .contacts-card-item-label {
   width: 145px;
-  color: #666666;
+  color: var(--gray-color);
   font-weight: bold;
   font-size: 22px;
   line-height: 32px;
@@ -529,9 +563,16 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  color:#333333;
+  color:var(--dark-gray-color);
+  font-style: normal;
 }
 
+
+.contacts-card-address-info:hover {
+  font-weight: bold;
+  color: var(--orange-color);
+  cursor: pointer;
+}
 .contacts-card-phones-info {
   font-size: 16px;
   line-height: 24px;
@@ -555,15 +596,6 @@ body {
 .route-button {
   width: 214px;
   height: 70px;
-  display: inline-block;
-  font-size: 16x;
-  line-height: 32px;
-  font-weight: bold;
-  background-color: white;
-  color: var(--orange-color);
-  border-radius: 12px;
-  cursor: pointer;
-  border: 1px solid var(--orange-color);
 }
 
 .write-us {
@@ -600,7 +632,7 @@ body {
 .footer {
   margin-top: 20px;
   margin-bottom: 50px;
-  background-color: #333333;
+  background-color: var(--dark-gray-color);
   border-radius: 12px;
   color: white;
   display: flex;
