@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lagoona</title>
   <link rel="stylesheet" href="css/noramlize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -51,48 +52,50 @@
 
   <main>
     <section class="section">
-      <div class="container hero-content">
-        <div class="fast-reservation">
-          <h2 class="normal-header">
-            Быстрая бронь
-          </h2>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="reservation">
-            <input type="text" name="city" required class="fast-reservation-input" placeholder="Город">
-            <select name="category" class="fast-reservation-input" placeholder="Категория номера">
-              <option value="" disabled selected>Категория номера</option>
-              <option>Стандартный</option>
-              <option>Люкс</option>
-            </select>
-            <input type="date" name="date" class="fast-reservation-input" placeholder="Дата заселения">
-            <input type="number" name="nights_number" class="fast-reservation-input" placeholder="Количество ночей">
-            <input type="number" name="guests_number" class="fast-reservation-input" placeholder="Количество гостей">
-            <button class="btn find-room-button">Найти номер</button>
-            <div class="offer-amount">
-              <span class="offer-number">
-                9756
-              </span>
-              <div class="offer-amount-text">
-                предложений доступно
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <h2 class="normal-header">
+              Быстрая бронь
+            </h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="reservation">
+              <input type="text" name="city" required class="fast-reservation-input" placeholder="Город">
+              <select name="category" class="fast-reservation-input" placeholder="Категория номера">
+                <option value="" disabled selected>Категория номера</option>
+                <option>Стандартный</option>
+                <option>Люкс</option>
+              </select>
+              <input type="date" name="date" class="fast-reservation-input" placeholder="Дата заселения">
+              <input type="number" name="nights_number" class="fast-reservation-input" placeholder="Количество ночей">
+              <input type="number" name="guests_number" class="fast-reservation-input" placeholder="Количество гостей">
+              <button class="btn find-room-button">Найти номер</button>
+              <div class="offer-amount">
+                <span class="offer-number">
+                  9756
+                </span>
+                <div class="offer-amount-text">
+                  предложений доступно
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
+            </form>
+          </div>
 
-        <div class="spetial-offer">
-          <h2 class="normal-header">
-            Спецпредложение
-          </h2>
-          <div class="offer-card">
-            <div class="offer-content">
-              <h3 class="offer-big-text">
-                Номера категории люкс
-              </h3>
-              <div class="offer-price">
-                от 5 000 р
+          <div class="col-7">
+            <h2 class="normal-header">
+              Спецпредложение
+            </h2>
+            <div class="offer-card">
+              <div class="offer-content">
+                <h3 class="offer-big-text">
+                  Номера категории люкс
+                </h3>
+                <div class="offer-price">
+                  от 5 000 р
+                </div>
+                <a href="" class="offer-details-link">
+                  Подробнее
+                </a>
               </div>
-              <a href="" class="offer-details-link">
-                Подробнее
-              </a>
             </div>
           </div>
         </div>
@@ -119,99 +122,133 @@
         <h2 class="normal-header">
           Услуги
         </h2>
-        <ul class="services-cards">
-          <li class="services-card">
-            <img src="img/10.png" alt="" class="services-card-image">
-            <div class="services-card-body">
-              <h3><a href="" class="services-card-link">Эксклюзивное обслуживание</a></h3>
-              <p class="services-card-description">Равным образом постоянный количественный рост и сфера нашей
-                активности</p>
+        <ul class="row">
+          <li class="col-6">
+            <div class="services-card">
+              <img src="img/10.png" alt="" class="services-card-image">
+              <div class="services-card-body">
+                <h3><a href="" class="services-card-link">Эксклюзивное обслуживание</a></h3>
+                <p class="services-card-description">Равным образом постоянный количественный рост и сфера нашей
+                  активности</p>
+              </div>
             </div>
+
           </li>
-          <li class="services-card">
-            <img src="img/15.png" alt="" class="services-card-image">
-            <div class="services-card-body">
-              <h3><a href="" class="services-card-link">Аренда банкетных залов</a></h3>
-              <p class="services-card-description">Значимость этих проблем настолько очевидна, что дальнейшее развитие
-                различных форм.</p>
+          <li class="col-6">
+            <div class="services-card">
+              <img src="img/15.png" alt="" class="services-card-image">
+              <div class="services-card-body">
+                <h3><a href="" class="services-card-link">Аренда банкетных залов</a></h3>
+                <p class="services-card-description">Значимость этих проблем настолько очевидна, что дальнейшее развитие
+                  различных форм.</p>
+              </div>
             </div>
+
           </li>
-          <li class="services-card">
-            <img src="img/12.png" alt="" class="services-card-image">
-            <div class="services-card-body">
-              <h3><a href="" class="services-card-link">Сауна, бассейны, бани, фитнес-залы</a></h3>
-              <p class="services-card-description">Не следует, однако забывать, что начало повседневной работы по
-                формированию позиции</p>
+          <li class="col-6">
+            <div class="services-card">
+              <img src="img/12.png" alt="" class="services-card-image">
+              <div class="services-card-body">
+                <h3><a href="" class="services-card-link">Сауна, бассейны, бани, фитнес-залы</a></h3>
+                <p class="services-card-description">Не следует, однако забывать, что начало повседневной работы по
+                  формированию позиции</p>
+              </div>
             </div>
+
           </li>
-          <li class="services-card">
-            <img src="img/11.png" alt="" class="services-card-image">
-            <div class="services-card-body">
-              <h3>
-                <a href="" class="services-card-link">Эксклюзивное обслуживание</a>
-              </h3>
-              <div class="services-card-description">Не следует, однако забывать, что начало повседневной работы по
-                формированию позиции</div>
+          <li class="col-6">
+            <div class="services-card">
+              <img src="img/11.png" alt="" class="services-card-image">
+              <div class="services-card-body">
+                <h3>
+                  <a href="" class="services-card-link">Эксклюзивное обслуживание</a>
+                </h3>
+                <div class="services-card-description">Не следует, однако забывать, что начало повседневной работы по
+                  формированию позиции</div>
+              </div>
             </div>
           </li>
         </ul>
       </div>
     </section>
-
     <section class="advantages section">
       <div class="container">
         <h2 class="normal-header">
           Преимущества
         </h2>
-        <ul class="advantages-cards">
-          <li class="advantages-card">
+        <ul class="row advantages-cards">
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/bathtub.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
-          <li class="advantages-card">
+
+            </div></li>
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/hanger.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
-          <li class="advantages-card">
+
+            </div></li>
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/heating.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
-          <li class="advantages-card">
+
+            </div></li>
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/hotel-key.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
-          <li class="advantages-card">
+
+            </div></li>
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/parking.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
-          <li class="advantages-card">
+
+            </div></li>
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/reception.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
-          <li class="advantages-card">
+
+            </div></li>
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/security-box.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
-          <li class="advantages-card">
+
+            </div></li>
+          <li class="col-3">
+            <div class="advantages-card">
+
             <div style="background-image: url(img/swimming-pool.svg);" class="advantages-card-img"></div>
             <p class="advantages-card-description">
               Идейные соображения высшего порядка, а также постоянный количественный рост
             </p>
-          </li>
+
+            </div></li>
         </ul>
       </div>
     </section>
@@ -221,8 +258,9 @@
         <h2 class="normal-header">
           Размещение
         </h2>
-        <ul class="allocation-cards">
-          <li class="allocation-card">
+        <ul class="row">
+          <li class="col-4">
+            <div class="allocation-card">
             <img src="img/23.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -255,8 +293,10 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card">
+          <li class="col-4">
+            <div class="allocation-card">
             <img src="img/24.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -289,8 +329,11 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card">
+          <li class="col-4">
+            <div class="allocation-card">
+
             <img src="img/26.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -323,8 +366,11 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card">
+          <li class="col-4">
+            <div class="allocation-card">
+
             <img src="img/27.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -357,8 +403,11 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card">
+          <li class="col-4">
+            <div class="allocation-card">
+
             <img src="img/28.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -391,8 +440,11 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card">
+          <li class="col-4">
+            <div class="allocation-card">
+
             <img src="img/29.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -425,8 +477,11 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card">
+          <li class="col-4">
+            <div class="allocation-card">
+
             <img src="img/30.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -459,8 +514,11 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card">
+          <li class="col-4">
+            <div class="allocation-card">
+
             <img src="img/31.png" alt="" class="allocation-card-pic">
             <div class="allocation-card-body">
               <div class="allocation-card-1st-row">
@@ -493,8 +551,9 @@
                 Номера
               </button>
             </div>
+            </div>
           </li>
-          <li class="allocation-card allocation-card-last">
+          <li class="col-4 allocation-card allocation-card-last">
             <div class="allocation-card-body-last">
               <a href="" class="all-allocation-variants-link">
                 Посмотреть все варианты
@@ -512,7 +571,7 @@
         </h2>
         <div class="contacts-container">
           <div class="contacts-card">
-            <table >
+            <table>
               <tr class="contacts-card-item">
                 <td class="contacts-card-item-label">
                   Адрес
@@ -566,16 +625,16 @@
             <button class="light-btn route-button">Построить маршрут</button>
           </div>
           <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="write-us-form">
-          <fieldset class="write-us">
-            <legend class="normal-header">
-              Напишите нам
-            </legend>
+            <fieldset class="write-us">
+              <legend class="normal-header">
+                Напишите нам
+              </legend>
               <input type="text" name="name" placeholder="Имя">
               <input type="tel" name="phone" placeholder="+7">
               <input type="text" name="message" placeholder="Сообщение...">
               <button class="btn write-us-button"> Отправить</button>
-          </fieldset>
-        </form>
+            </fieldset>
+          </form>
         </div>
       </div>
     </section>

@@ -78,10 +78,6 @@ body {
 
 .container {
   max-width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .section {
@@ -217,15 +213,7 @@ body {
 
 /* HERO */
 
-.hero-content {
-  padding-bottom: 35px;
-  display: flex;
-  justify-content: space-between;
-}
 
-.fast-reservation {
-  width: 40%;
-}
 
 .normal-header {
   margin-bottom: 30px;
@@ -266,17 +254,11 @@ body {
   display: inline-block;
 }
 
-.special-offer {
-  width: 595px;
-  height: 543px;
-}
-
 .offer-card {
-  background: url('../img/22.png') 100% 100% no-repeat;
+  background: center / contain no-repeat url('../img/22.png');
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 595px;
   min-height: 540px;
   padding-bottom: 30px;
   padding-left: 43px;
@@ -322,21 +304,12 @@ body {
 
 /* SERVICES */
 
-.services-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .services-card {
   display: inline-block;
   margin-bottom: 25px;
   background-color: white;
   border-radius: 12px;
-  flex: 0 1 calc(50% - 1em);
-}
-
-.services-card:not(:nth-child(2n)) {
-  margin-right: 30px;
 }
 
 .services-card-image {
@@ -366,23 +339,12 @@ body {
 
 /* advantages */
 
-.advantages-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .advantages-card {
   background-color: white;
   margin-bottom: 20px;
   border-radius: 12px;
   padding: 40px;
-  flex: 0 1 calc(25% - 1em);
   transition: background-color 0.3s ease;
-}
-
-
-.advantages-card:not(:nth-child(4n)) {
-  margin-right: 20px;
 }
 
 .advantages-card:hover {
@@ -413,26 +375,12 @@ body {
 
 /* Allocation */
 
-.allocation-cards {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .allocation-card {
   margin-bottom: 30px;
   background-color: white;
   border-radius: 12px;
-  flex: 0 1 calc(31%);
 }
-
-.allocation-card:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.allocation-card:not(:nth-last-child(n+4)) {
-  margin-bottom: 0;
-}
-
 
 .allocation-card-pic {
   display: block;
