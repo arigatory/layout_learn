@@ -1,5 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
 .body {
   font-family: "Montserrat";
+  color: #333333;
+
 }
 
 .main-btn {
@@ -24,6 +37,27 @@
   padding-right: 75px;
 }
 
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav__link {
+  color: #333333;
+  margin-right: 75px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header-nav__search-icon{
+  width: 27.17px;
+  height: 25.62px;
+  background: url(../img/Search.svg) no-repeat center center;
+  background-size: 100% 100%;
+}
 
 
 /* SECTION-HERO */
@@ -57,6 +91,64 @@
 .section-hero__btn {
   margin-bottom: 91px;
 }
+
+/* SECTION ABOUT-US */
+
+.section-about-us__header {
+  font-size: 48px;
+  line-height: 58.51px;
+  margin-bottom: 10px;
+}
+
+.section-about-us__description {
+  max-width: 1235px;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 44px;
+}
+
+.about-us__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-image {
+  width: 49.5%;
+  background: url(../img/worker.png) no-repeat white right center;
+}
+
+.about-us__cards {
+  width: 49.5%;
+}
+
+.about-us-card:first-child {
+  margin-bottom: 30px;
+}
+
+.about-us-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 67px 118px 72px 63px;
+  border: 1px solid #CACACA;
+}
+
+.about-us-card__pic {
+  margin-right: 59px;
+}
+
+.about-us-card__description {
+  font: size 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.about-us-card__description::first-line{
+  font-size:24px;
+  line-height:29.26px;
+  font-weight: 700;
+}
+
 /* FOOTER */
 .footer {
   background-color: #222222;
