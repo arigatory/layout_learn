@@ -12,6 +12,7 @@ a {
 .body {
   font-family: "Montserrat";
   color: #333333;
+  background-color: #E5E5E5;
 
 }
 
@@ -39,11 +40,14 @@ a {
 
 /* HEADER */
 .header {
+  background-color: white;
+}
+
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .header-nav__link {
   color: #333333;
   margin-right: 75px;
@@ -93,6 +97,9 @@ a {
 }
 
 /* SECTION ABOUT-US */
+.section-about-us {
+  margin-bottom: 100px;
+}
 
 .section-about-us__header {
   font-size: 48px;
@@ -107,18 +114,11 @@ a {
   margin-bottom: 44px;
 }
 
-.about-us__row {
-  display: flex;
-  justify-content: space-between;
-}
-
 .about-us-image {
-  width: 49.5%;
-  background: url(../img/worker.png) no-repeat white right center;
-}
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 
-.about-us__cards {
-  width: 49.5%;
 }
 
 .about-us-card:first-child {
@@ -131,6 +131,8 @@ a {
   justify-content: flex-start;
   padding: 67px 118px 72px 63px;
   border: 1px solid #CACACA;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 .about-us-card__pic {

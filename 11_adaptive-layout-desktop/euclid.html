@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
-  <header class="header container">
-    <img class="logo" src="img/logo.png"/>
-    <nav class="header-nav">
-      <a href="" class="header-nav__link">О нас</a>
-      <a href="" class="header-nav__link">Проекты</a>
-      <a href="" class="header-nav__link">Этапы</a>
-      <a href="" class="header-nav__link">Отзывы</a>
-      <a href="" class="header-nav__link">Контакты</a>
-      <a class="header-nav__search-icon"></a>
-    </nav>
+  <header class="header">
+    <div class="container header__container">
+      <img class="logo" src="img/logo.png"/>
+      <nav class="header-nav">
+        <a href="" class="header-nav__link">О нас</a>
+        <a href="" class="header-nav__link">Проекты</a>
+        <a href="" class="header-nav__link">Этапы</a>
+        <a href="" class="header-nav__link">Отзывы</a>
+        <a href="" class="header-nav__link">Контакты</a>
+        <a class="header-nav__search-icon"></a>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -46,10 +48,9 @@
       <div class="section-about-us__description">
         Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип       будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
       </div>
-      <div class="about-us__row">
-        <div class="about-us-image">
-        </div>
-        <div class="about-us__cards">
+      <div class="row">
+        <img src="img/worker.png" alt="" class="col-6 about-us-image">
+        <div class="col-6">
           <div class="about-us-card">
             <div class="about-us-card__pic">
               <svg width="178" height="137" viewbox="0 0 178 137" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,17 +82,101 @@
       </div>
     </section>
 
-    <section class="section-how-we-work">
-
+    <section class="section-how-we-work container">
+      <h2 class="section-about-us__header">
+        Как мы работаем
+      </h2>
+      <div class="row">
+        <nav class="how-we-work-nav">
+          <a href="" class="how-we-work-nav__link">
+            1 шаг
+          </a>
+          <a href="" class="how-we-work-nav__link">
+            2 шаг
+          </a>
+          <a href="" class="how-we-work-nav__link">
+            3 шаг
+          </a>
+          <a href="" class="how-we-work-nav__link">
+            4 шаг
+          </a>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="how-we-work__text">
+            Проводим консультацию<br>Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+          </div>
+          <a href="" class="main-btn">Подробнее</a>
+          <a href="" class="main-btn">Договор</a>
+        </div>
+        <div class="col-6">
+          <img src="img/how-we-work.png" alt="">
+        </div>
+      </div>
     </section>
 
     <section class="section-faq">
-
+      <h2>
+        Часто задаваемые вопросы
+      </h2>
+      <ul>
+        <li>
+          Из чего формируется конечная стоимость проекта?
+        </li>
+        <li>
+          У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+        </li>
+        <li>
+          Я выбираю между разными компаниями. В чём ваше отличие?
+        </li>
+        <li>
+          Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
+        </li>
+        <li>
+          Могу ли я вернуть деньги на каком-либо из этапов работ?
+        </li>
+      </ul>
     </section>
   </main>
 
   <footer class="footer">
-    Test
+    <div class="row">
+      <div class="col-4">
+        <img src="img/logo2.png" alt="">
+        <ul>
+          <li>
+            О нас
+          </li>
+          <li>
+            Проекты
+
+          </li>
+          <li>
+            Отзывы
+
+          </li>
+          <li>
+            Договор оферты
+          </li>
+          <li>
+             Договор подряда
+          </li>
+          <li>
+            Конфиденциальность
+          </li>
+          <li>
+            Партнёрское соглашение
+          </li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <h2>Оставить заявку</h2>
+      </div>
+      <div class="col-4">
+        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов.
+      </div>
+    </div>
   </footer>
 </body>
 </html>
