@@ -12,7 +12,7 @@ a {
 .body {
   font-family: "Montserrat";
   color: #333333;
-  background-color: #E5E5E5;
+  background-color: white;
 
 }
 
@@ -151,8 +151,126 @@ a {
   font-weight: 700;
 }
 
+
+/* HOW WE WORK */
+.section-how-we-work {
+  margin-bottom: 100px;
+}
+
+.section-how-we-work__header {
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 38px;
+  font-weight: normal;
+}
+
+.how-we-work-nav__link {
+  margin-right: 85px;
+  margin-bottom: 49px;
+  color: #333333;
+}
+
+.how-we-work__text {
+  font-size:16px;
+  line-height: 32px;
+  font-weight: 400;
+  max-width:758px;
+  margin-bottom: 101px;
+}
+
+.how-we-work__text::first-line{
+  font-size:24px;
+  line-height:32px;
+  font-weight: 700;
+}
+
+.how-we-work__img {
+max-height: 465px;
+}
+
+.how-we-work__detail-btn {
+  margin-right: 30px;
+}
+
+.how-we-work__contract-btn {
+  background-color: white;
+  color: #333333;
+  border: 1px solid #333333;
+}
+
+
+/* FAQ */
+.section-faq {
+  margin-bottom: 100px;
+}
+
+.section-faq__header {
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 38px;
+  font-weight: normal;
+}
+
+.faqs {
+  list-style-type: none;
+}
+
+.faqs__item {
+  padding-top:30px;
+  padding-bottom:30px;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqs__text {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.faqs__img {
+  width: 50px;
+  height: 50px;
+}
+
 /* FOOTER */
 .footer {
   background-color: #222222;
   color: #CACACA;
+  height: 630px;
+  padding-top: 48px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.footer-left__logo{
+  margin-bottom: 19px;
+}
+
+.footer-left-list {
+  list-style-type: none;
+  margin-bottom: 118px;
+}
+
+.footer-left-list__item {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.social-pics__img {
+  margin-right: 25px;
+}
+
+.footer__description {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
 }
