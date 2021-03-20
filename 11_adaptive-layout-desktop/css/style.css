@@ -9,6 +9,10 @@ a {
   display: inline-block;
 }
 
+a:hover {
+  color: #7c3200;
+}
+
 .body {
   font-family: "Montserrat";
   color: #333333;
@@ -30,6 +34,10 @@ a {
   display: inline-block;
 }
 
+.main-btn:hover {
+  background-color: #ca7900;
+}
+
 .container{
   max-width: 1770px;
   margin-right: auto;
@@ -41,6 +49,7 @@ a {
 /* HEADER */
 .header {
   background-color: white;
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header__container {
@@ -244,6 +253,7 @@ max-height: 465px;
   padding-top: 48px;
 }
 
+
 .footer-left {
   display: flex;
   align-items: flex-start;
@@ -269,8 +279,56 @@ max-height: 465px;
   margin-right: 25px;
 }
 
+
+.send-data-form__header {
+  font-size: 48px;
+  line-height: 58.51px;
+  margin-bottom: 31px;
+}
+
+.send-data-form {
+  display: flex;
+  flex-direction: column;
+  border:none;
+  padding: 0;
+}
+
+.send-data__input {
+  height: 60px;
+  margin-bottom: 25px;
+  background-color: #414141;
+  border: none;
+  padding: 14px 24px;
+  color: #CACACA;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.send-data__input_message{
+  height: 150px;
+}
+
+.send-data__input::placeholder {
+  opacity: 1;
+  color: #CACACA;
+}
+
+.send-data__button {
+  margin-right: 2px;
+}
+
+.send-data__checkbox {
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+}
+
 .footer__description {
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
 }
+
