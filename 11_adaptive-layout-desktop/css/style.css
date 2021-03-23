@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src:  url('/fonts/montserratlight.woff2') format('woff2');
+  src:  url('/fonts/montserratlight.woff2') format('woff2'), url('../fonts/montserratlight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -47,7 +47,7 @@ a:hover {
 }
 
 .body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   color: #333333;
   background-color: white;
 
