@@ -29,8 +29,6 @@
   font-style: normal;
 }
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -122,15 +120,15 @@ a:hover {
 }
 .section-hero__heading {
   max-width: 841.75px;
-  margin-bottom: 32px;
+  margin-bottom: 19px;
   color: white;
   font-weight: 800;
   font-size: 70.73px;
   line-height: 86px;
 }
 .section-hero__description {
-  margin-bottom: 91px;
-  max-width: 836.73px;
+  margin-bottom: 100px;
+  max-width: 700px;
   color: white;
   font-weight: 700;
   font-size: 23.46px;
@@ -139,6 +137,7 @@ a:hover {
 
 .section-hero__btn {
   margin-bottom: 91px;
+  padding: 25px 40px 25px 40px;
 }
 
 /* SECTION ABOUT-US */
@@ -149,14 +148,15 @@ a:hover {
 .section-about-us__header {
   font-size: 48px;
   line-height: 58.51px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  font-weight: 400;
 }
 
 .section-about-us__description {
   max-width: 1235px;
   font-size: 16px;
   line-height: 32px;
-  margin-bottom: 44px;
+  margin-bottom: 75px;
 }
 
 .about-us-image {
@@ -178,6 +178,7 @@ a:hover {
   border: 1px solid #CACACA;
   background-color: white;
   box-sizing: border-box;
+  height: 47%;
 }
 
 .about-us-card__pic {
