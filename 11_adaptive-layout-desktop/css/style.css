@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: #7c3200;
+  color: #E1670E;
 }
 
 .body {
@@ -22,8 +22,8 @@ a:hover {
 
 .main-btn {
   background-color: #FF9900;
+  padding: 19px 38px;
   border-radius: 0px;
-  padding: 19px 37px 19px 37px;
   color: #FFFFFF;
   font-size: 23.46px;
   line-height: 28.6px;
@@ -31,13 +31,18 @@ a:hover {
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .main-btn:hover {
-  background-color: #ca7900;
+  background-color: rgba(255, 153, 0, 0.6);
+  color: white;
 }
 
+.main-btn:active {
+  background: #E1670E;
+}
 .container{
   max-width: 1920px;
   margin-right: auto;
@@ -67,10 +72,12 @@ a:hover {
 }
 
 .header-nav__search-icon{
-  width: 30px;
-  height: 30px;
+  width: 25.17px;
+  height: 25.62px;
   background: url(../img/Search.svg) no-repeat center center;
   background-size: 100% 100%;
+  margin-right: 11.83px;
+  border: none;
 }
 
 
@@ -97,7 +104,7 @@ a:hover {
 }
 .section-hero__description {
   margin-bottom: 100px;
-  max-width: 700px;
+  max-width: 50%;
   color: white;
   font-weight: 700;
   font-size: 23.46px;
@@ -106,12 +113,14 @@ a:hover {
 
 .section-hero__btn {
   margin-bottom: 91px;
-  padding: 25px 40px 25px 40px;
+  height: 80px;
+  max-width: 285px;
+  font-weight: 700;
 }
 
 /* SECTION ABOUT-US */
 .section-about-us {
-  margin-bottom: 100px;
+  margin-bottom: 95px;
 }
 
 .section-about-us__header {
@@ -125,11 +134,16 @@ a:hover {
   max-width: 1235px;
   font-size: 16px;
   line-height: 32px;
-  margin-bottom: 75px;
+  margin-bottom: 46px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-us-image {
-  max-width: 100%;
+  max-width: 49%;
   height: auto;
   object-fit: cover;
 
@@ -139,11 +153,15 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.about-us-cards {
+ width: 49%;
+}
+
 .about-us-card {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 67px 118px 72px 63px;
+  padding: 67px 110px 72px 63px;
   border: 1px solid #CACACA;
   background-color: white;
   box-sizing: border-box;
@@ -151,7 +169,7 @@ a:hover {
 }
 
 .about-us-card__pic {
-  margin-right: 59px;
+  margin-right: 56px;
 }
 
 .about-us-card__description {
@@ -179,8 +197,12 @@ a:hover {
   font-weight: normal;
 }
 
+.how-we-work-nav{
+  padding-top: 10px;
+}
+
 .how-we-work-nav__link {
-  margin-right: 85px;
+  margin-right: 92px;
   margin-bottom: 49px;
   color: #333333;
 }
@@ -190,7 +212,7 @@ a:hover {
   line-height: 32px;
   font-weight: 400;
   max-width:758px;
-  margin-bottom: 101px;
+  margin-bottom: 70px;
 }
 
 .how-we-work__text::first-line{
@@ -203,14 +225,25 @@ a:hover {
 max-height: 465px;
 }
 
+.how-we-work__buttons {
+ display: flex;
+}
 .how-we-work__detail-btn {
   margin-right: 30px;
+  width: 175px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 19.5px;
 }
 
 .how-we-work__contract-btn {
   background-color: white;
   color: #333333;
   border: 1px solid #333333;
+  width: 147px;
+  height: 58px;
+  font-size: 16px;
+  line-height: 19.5px;
 }
 
 
@@ -240,6 +273,16 @@ max-height: 465px;
   align-items: center;
 }
 
+
+.faqs__item:not(:first-child) {
+  margin-top: -1px;
+}
+
+.faqs__item:hover {
+  color: #FF9900;
+  border-color: #FF9900;
+}
+
 .faqs__text {
   font-size: 24px;
   line-height: 32px;
@@ -260,11 +303,19 @@ max-height: 465px;
 }
 
 
+.footer-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-left {
   display: flex;
   align-items: flex-start;
   justify-items: center;
   flex-direction: column;
+  width: 30%;
 }
 
 .footer-left__logo{
@@ -285,6 +336,10 @@ max-height: 465px;
   margin-right: 25px;
 }
 
+
+.footer-center {
+  max-width: 570px;
+}
 
 .send-data-form__header {
   font-size: 48px;
@@ -323,6 +378,16 @@ max-height: 465px;
 
 .send-data__button {
   margin-right: 2px;
+  width: 269px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 700;
+}
+
+.send-data__last-line {
+  display: flex;
+  align-items: center;
 }
 
 .send-data__checkbox {
@@ -336,5 +401,6 @@ max-height: 465px;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
+  max-width: 363px;
 }
 
