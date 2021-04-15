@@ -9,15 +9,10 @@ a {
   display: inline-block;
 }
 
-a:hover {
-  color: #E1670E;
-}
-
 .body {
   font-family: 'Montserrat';
   color: #333333;
   background-color: white;
-
 }
 
 .main-btn {
@@ -63,6 +58,14 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-nav__link {
   color: #333333;
   margin-right: 75px;
@@ -70,6 +73,16 @@ a:hover {
   font-size: 18px;
   line-height: 22px;
 }
+
+.header-nav__link:hover {
+  border-bottom: 1px solid #FF9900;
+}
+
+.header-nav__link:active {
+  border-bottom: 1px solid #E1670E;
+  color: #E1670E;
+}
+
 
 .header-nav__search-icon{
   width: 25.17px;
@@ -281,6 +294,8 @@ max-height: 465px;
 .faqs__item:hover {
   color: #FF9900;
   border-color: #FF9900;
+  z-index: 1;
+  position: relative;
 }
 
 .faqs__text {
