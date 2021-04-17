@@ -9,6 +9,14 @@ a {
   display: inline-block;
 }
 
+.main-link:hover {
+  color: #FF9900;
+}
+
+.main-link:active{
+  color: #E1670E;
+}
+
 .body {
   font-family: 'Montserrat';
   color: #333333;
