@@ -398,7 +398,7 @@ max-height: 465px;
 
 
 .footer-center {
-  max-width: 570px;
+  max-width: 580px;
 }
 
 .send-data-form__header {
@@ -437,12 +437,13 @@ max-height: 465px;
 }
 
 .send-data__button {
-  margin-right: 2px;
+  margin-right: 22px;
   width: 269px;
   height: 60px;
   font-size: 16px;
   line-height: 19.5px;
   font-weight: 700;
+  border: #FF9900;
 }
 
 .send-data__last-line {
@@ -455,7 +456,59 @@ max-height: 465px;
   width: 14px;
   height: 14px;
   background-color: transparent;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
+
+.send-data__checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.send-data__checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #CACACA;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% 80%;
+}
+
+.send-data__checkbox:checked+label::before {
+  border-color: #CACACA;
+  background-color:transparent;
+  background-image: url(../img/V.svg);
+}
+
+/* стили при наведении курсора на checkbox */
+.send-data__checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #FF9900;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.send-data__checkbox:not(:disabled):active+label::before {
+  background-color: transparent;
+  border-color: #CACACA;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.send-data__checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem  rgba(255, 153, 0, 0.2);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.send-data__checkbox:focus:not(:checked)+label::before {
+  border-color: #FF9900;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.send-data__checkbox:disabled+label::before {
+  background-color: transparent;
+}
+
 
 .footer__description {
   font-size: 16px;
