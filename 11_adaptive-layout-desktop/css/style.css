@@ -155,11 +155,39 @@ a {
   justify-content: space-between;
 }
 
-.about-us-image {
-  max-width: 49%;
-  height: auto;
-  object-fit: cover;
 
+.about-us-big-card {
+  width: 49%;
+  background: url("../img/worker.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-us-big-card__footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 33%;
+  justify-content: space-between;
+  padding-right: 54px;
+  padding-left: 68px;
+}
+
+.about-us-big-card__description {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 700;
+  max-width: 497px;
+}
+
+.about-us-big-card__button {
+  border: 3px solid #FF9900;
+  background: transparent;
+  width: 175px;
+  font-size: 16px;
 }
 
 .about-us-card:first-child {
