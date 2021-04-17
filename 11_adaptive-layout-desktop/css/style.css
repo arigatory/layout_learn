@@ -254,6 +254,8 @@ a {
   margin-right: 92px;
   margin-bottom: 49px;
   color: #333333;
+  background: none;
+  border: none;
 }
 
 .how-we-work__text {
@@ -293,9 +295,16 @@ max-height: 465px;
   height: 58px;
   font-size: 16px;
   line-height: 19.5px;
+  font-weight: normal;
 }
 
+.how-we-work__contract-btn:hover {
+  background-color: #666666;
+}
 
+.how-we-work__contract-btn:active {
+  background-color: black;
+}
 /* FAQ */
 .section-faq {
   margin-bottom: 100px;
