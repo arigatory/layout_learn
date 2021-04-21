@@ -46,7 +46,9 @@ a {
 .main-btn:active {
   background: #E1670E;
 }
+
 .container{
+  width: 100%;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
@@ -65,6 +67,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.burger {
+  display: none;
+  height: 23px;
+  width: 30px;
 }
 
 .header-nav {
@@ -95,12 +103,11 @@ a {
   width: 945px;
   border: 1px solid #adadad;
   border-radius: 100px ;
-  display: flex;
   padding: 16px;
   position: absolute;
   z-index: 1;
   background-color: white;
-  visibility: hidden;
+  display: none;
 }
 
 .search-field__form {
@@ -139,7 +146,6 @@ a {
   margin-right: 11.83px;
   border: none;
 }
-
 
 /* SECTION-HERO */
 .section-hero {
@@ -315,6 +321,7 @@ a {
 
 .how-we-work__img {
 max-height: 465px;
+width: 49%;
 }
 
 .how-we-work__buttons {
@@ -559,28 +566,27 @@ max-height: 465px;
   max-width: 363px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   .container{
-    max-width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  .header-nav__link {
+  .header-nav {
     display: none;
   }
 
-  .logo {
-    display: flex;
-    justify-self: center;
-    align-self: center;
+  .burger {
+    display: block;
   }
 }
 
 @media (max-width: 768px) {
-
+  .container{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 @media (max-width: 320px) {
