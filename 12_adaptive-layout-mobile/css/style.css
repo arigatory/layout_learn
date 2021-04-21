@@ -21,6 +21,9 @@ a {
   font-family: 'Montserrat';
   color: #333333;
   background-color: white;
+  overflow-x: hidden;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .main-btn {
@@ -48,7 +51,6 @@ a {
 }
 
 .container{
-  width: 100%;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
@@ -155,11 +157,14 @@ a {
 .section-hero__container {
   padding-top: 103px;
   padding-left: 78px;
-  background: url(../img/low-angle-photo-of-balconies-2462015.png) no-repeat white right center;
-  background-size: 100% 100%;
+  background: url(../img/low-angle-photo-of-balconies-2462015.png) no-repeat center center;
+  background-size: cover;
   height: 620px;
   padding-bottom: 91px;
+  margin-right: 75px;
+  margin-left: 75px;
 }
+
 .section-hero__heading {
   max-width: 841.75px;
   margin-bottom: 19px;
@@ -168,6 +173,7 @@ a {
   font-size: 70.73px;
   line-height: 86px;
 }
+
 .section-hero__description {
   margin-bottom: 100px;
   max-width: 50%;
@@ -204,11 +210,12 @@ a {
   margin-bottom: 46px;
 }
 
-.row {
+
+
+.about-us-row {
   display: flex;
   justify-content: space-between;
 }
-
 
 .about-us-big-card {
   width: 49%;
@@ -303,6 +310,11 @@ a {
   color: #333333;
   background: none;
   border: none;
+}
+
+.how-we-work-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .how-we-work__text {
@@ -487,7 +499,7 @@ width: 49%;
 
 .send-data__button {
   margin-right: 22px;
-  width: 269px;
+  max-width: 269px;
   height: 60px;
   font-size: 16px;
   line-height: 19.5px;
@@ -568,9 +580,14 @@ width: 49%;
 
 @media (max-width: 1180px) {
   .container{
-    width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+
+  .section-hero__container {
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
   .header-nav {
@@ -580,14 +597,152 @@ width: 49%;
   .burger {
     display: block;
   }
+
+  .section-hero__heading {
+    max-width: 85%;
+    margin-bottom: 18px;
+    font-size: 60px;
+    line-height: 73.14px;
+  }
+
+  .section-hero__description {
+    margin-bottom: 110px;
+    max-width: 80%;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .about-us-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-us-big-card {
+    width: 100%;
+    height: 640px;
+    margin-bottom: 50px;
+  }
+
+  .about-us-cards {
+    width: 100%;
+  }
+
+  .footer__description {
+    display: none;
+  }
+
+  .footer-center {
+    width: 59%;
+  }
+
+  .footer-left {
+    width: 39%;
+  }
 }
 
 @media (max-width: 768px) {
   .container{
     width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .section-hero__container {
+    margin-right: 0;
+    margin-left: 0;
+    height: 768px;
+  }
+
+  .how-we-work-row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .how-we-work__img {
+    width: 100%;
+    margin-bottom: 38px;
+  }
+
+  .footer-left {
+    display: none;
+  }
+
+  .footer-center {
+    width: 100%;
+  }
+
 }
 
-@media (max-width: 320px) {
+@media (max-width: 670px) {
+  h2 {
+    font-size: 24px;
+    line-height: 29.26px;
+  }
+
+  .header-nav__search-icon {
+    display: none;
+  }
+
+  .header__container {
+    flex-direction: row-reverse;
+  }
+
+  .section-hero__container {
+    padding-top: 77px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .section-hero__heading {
+    font-size: 20px;
+    line-height: 24.38px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .section-hero__description {
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 34px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .section-hero__btn {
+    height: 40px;
+    width: 162px;
+    font-size: 12px;
+    line-height: 14.63px;
+    padding: 14px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-hero__container {
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 307px;
+  }
+
+  .about-us-card {
+    flex-direction: column;
+    border:none;
+    width: 100%;
+    padding: 0;
+  }
+  .about-us-card__description {
+    width: 100%;
+  }
+
+  .send-data__last-line {
+    flex-direction: column;
+  }
 }
