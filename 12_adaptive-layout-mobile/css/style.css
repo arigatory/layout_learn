@@ -584,7 +584,13 @@ width: 49%;
     padding-right: 50px;
   }
 
+  .logo {
+    height: 48px;
+  }
 
+  .header-nav__search-icon {
+    margin-right: 0;
+  }
   .section-hero__container {
     margin-right: 50px;
     margin-left: 50px;
