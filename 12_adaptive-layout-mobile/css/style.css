@@ -275,7 +275,24 @@ a {
 }
 
 .about-us-card__pic {
-  margin-right: 56px;
+  height: 200px;
+  width: 200px;
+}
+
+.about-us-card__svg-container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 100%;
+}
+
+.about-us-card__svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .about-us-card__description {
@@ -688,6 +705,7 @@ a {
 
   .about-us-card__pic {
     margin-right: 59px;
+    width: 120%;
   }
 
   .section-how-we-work__header {
@@ -724,25 +742,106 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .container{
     width: 100%;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header__container{
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 69px;
+  }
+
+  .section-hero {
+    padding-bottom: 29px;
+  }
+
+  .section-about-us {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-how-we-work {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-faq {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .section-hero__container {
     margin-right: 0;
     margin-left: 0;
-    height: 768px;
+    height: 699px;
+    padding-top: 192px;
+    padding-left: 49px;
   }
+
+  .section-hero__description {
+    max-width: 100%;
+
+  }
+
+  .section-hero__heading {
+    margin-right: 0px;
+    max-width: 100%;
+  }
+
+  .about-us-big-card {
+    width: 100%;
+    height: 650px;
+    margin-bottom: 50px;
+  }
+
+  .about-us-card {
+    padding-left: 31px;
+    padding-top: 37px;
+    padding-right: 38px;
+    padding-bottom: 42px;
+    border: 1px solid #CACACA;
+    background-color: white;
+    box-sizing: border-box;
+    height: 47%;
+  }
+
+  .about-us-card__pic {
+    margin-right: 59px;
+    height: 137px;
+    width: 178px;
+  }
+
+
+
+  .about-us-card__description {
+    font: size 16px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+
+  .about-us-card__description::first-line{
+    font-size:24px;
+    line-height:29.26px;
+    font-weight: 700;
+  }
+
+
+
 
   .how-we-work-row {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
   }
-
+  .how-we-work__img {
+    width: 100%;
+    max-height: 697px;
+    height: 284px;
+  }
 
   .footer-left {
     display: none;
