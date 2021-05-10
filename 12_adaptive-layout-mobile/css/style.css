@@ -58,6 +58,18 @@ a {
   padding-right: 75px;
 }
 
+.h2 {
+  font-size: 48px;
+  line-height: 59px;
+  margin-bottom: 38px;
+  font-weight: normal;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 32px;
+}
+
 /* HEADER */
 .header {
   background-color: white;
@@ -201,16 +213,11 @@ a {
 }
 
 .section-about-us__header {
-  font-size: 48px;
-  line-height: 58.51px;
   margin-bottom: 25px;
-  font-weight: 400;
 }
 
 .section-about-us__description {
   max-width: 1235px;
-  font-size: 16px;
-  line-height: 32px;
   margin-bottom: 46px;
 }
 
@@ -284,9 +291,7 @@ a {
 }
 
 .about-us-card__description {
-  font: size 16px;
-  line-height: 32px;
-  font-weight: 400;
+
 }
 
 .about-us-card__description::first-line{
@@ -303,10 +308,7 @@ a {
 }
 
 .section-how-we-work__header {
-  font-size: 48px;
-  line-height: 59px;
   margin-bottom: 38px;
-  font-weight: normal;
 }
 
 .how-we-work-nav{
@@ -327,9 +329,6 @@ a {
 }
 
 .how-we-work__text {
-  font-size:16px;
-  line-height: 32px;
-  font-weight: 400;
   max-width:758px;
   margin-bottom: 70px;
 }
@@ -383,10 +382,7 @@ a {
 }
 
 .section-faq__header {
-  font-size: 48px;
-  line-height: 59px;
   margin-bottom: 38px;
-  font-weight: normal;
 }
 
 .faqs {
@@ -475,8 +471,6 @@ a {
 }
 
 .send-data-form__header {
-  font-size: 48px;
-  line-height: 58.51px;
   margin-bottom: 20px;
 }
 
@@ -586,9 +580,6 @@ a {
 
 .footer__description {
   padding-bottom: 30px;
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 400;
   max-width: 363px;
 }
 
@@ -995,7 +986,8 @@ a {
     padding: 0;
   }
   .about-us-card__description {
-    width: 100%;
+    width: 50%;
+    flex-direction: column-reverse;
   }
 
   .send-data__last-line {
@@ -1008,13 +1000,15 @@ a {
    .footer-columns {
      padding: 0;
    }
-   div {
-     font-size: 14px;
-   }
+
    span {
      font-size: 14px;
    }
    .footer-left {
      width: 100%;
+   }
+   .text {
+     font-size: 14px;
+     line-height: 28px;
    }
 }
