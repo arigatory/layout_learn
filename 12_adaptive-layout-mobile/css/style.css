@@ -219,6 +219,7 @@ a {
 .about-us-row {
   display: flex;
   justify-content: space-between;
+  height: 622px;
 }
 
 .about-us-big-card {
@@ -275,24 +276,11 @@ a {
 }
 
 .about-us-card__pic {
-  height: 200px;
-  width: 200px;
-}
-
-.about-us-card__svg-container {
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding: 0;
-  padding-bottom: 100%;
-}
-
-.about-us-card__svg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
+  min-width: 175px;
+  min-height: 175px;
+  background: no-repeat center center;
+  background-size:contain;
+  margin-right: 59px;
 }
 
 .about-us-card__description {
@@ -442,7 +430,7 @@ a {
 .footer {
   background-color: #222222;
   color: #CACACA;
-  height: 630px;
+  -minheight: 630px;
   padding-top: 50px;
 }
 
@@ -463,12 +451,12 @@ a {
 }
 
 .footer-left__logo{
-  margin-bottom: 19px;
+  margin-bottom: 11px;
 }
 
 .footer-left-list {
   list-style-type: none;
-  margin-bottom: 118px;
+  margin-bottom: 106px;
 }
 
 .footer-left-list__item {
@@ -477,18 +465,19 @@ a {
 }
 
 .social-pics__img {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 
 .footer-center {
   max-width: 580px;
+  padding-left: 10px;
 }
 
 .send-data-form__header {
   font-size: 48px;
   line-height: 58.51px;
-  margin-bottom: 31px;
+  margin-bottom: 20px;
 }
 
 .send-data-form {
@@ -522,7 +511,7 @@ a {
 
 .send-data__button {
   margin-right: 22px;
-  max-width: 269px;
+  min-width: 269px;
   height: 60px;
   font-size: 16px;
   line-height: 19.5px;
@@ -537,8 +526,8 @@ a {
 
 .send-data__checkbox {
   margin-right: 4px;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   background-color: transparent;
   position: absolute;
   z-index: -1;
@@ -550,6 +539,7 @@ a {
   align-items: center;
   user-select: none;
 }
+
 
 .send-data__checkbox+label::before {
   content: '';
@@ -595,6 +585,7 @@ a {
 
 
 .footer__description {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
@@ -672,6 +663,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: auto;
   }
 
   .section-about-us__description {
@@ -701,11 +693,6 @@ a {
   .about-us-card {
     padding-left: 110px;
     height: 294px;
-  }
-
-  .about-us-card__pic {
-    margin-right: 59px;
-    width: 120%;
   }
 
   .section-how-we-work__header {
@@ -800,7 +787,7 @@ a {
 
   .about-us-card {
     padding-left: 31px;
-    padding-top: 37px;
+    padding-top: 30px;
     padding-right: 38px;
     padding-bottom: 42px;
     border: 1px solid #CACACA;
@@ -810,11 +797,12 @@ a {
   }
 
   .about-us-card__pic {
-    margin-right: 59px;
-    height: 137px;
-    width: 178px;
+    min-width: 120px;
+    min-height: 120px;
+    background: no-repeat center center;
+    background-size:contain;
+    margin-right: 25px;
   }
-
 
 
   .about-us-card__description {
@@ -830,20 +818,54 @@ a {
   }
 
 
-
-
   .how-we-work-row {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
   }
+
+  .how-we-work-nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .how-we-work-nav__link {
+    margin-right: 0;
+  }
+
   .how-we-work__img {
     width: 100%;
     max-height: 697px;
     height: 284px;
+    margin-bottom: 35px;
   }
 
-  .footer-left {
+  .how-we-work-text-with-buttons
+  {
+    margin-right: 0px;
+  }
+
+  .section-faq__header {
+    padding-top: 7px;
+    font-size: 45px;
+    margin-bottom: 38px;
+  }
+
+  .footer-columns {
+    flex-direction: column-reverse;
+    justify-items: flex-start;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+
+  .footer-center {
+    padding-top: 10px;
+    padding-left: 10px;
+    max-width: 90%;
+    margin-bottom: 70px;
+   }
+
+  .footer-left-list {
     display: none;
   }
 
@@ -859,18 +881,52 @@ a {
     line-height: 29.26px;
   }
 
+  .logo {
+    height: 30px;
+  }
+
+   .header-group {
+     display: none;
+   }
+
+  .header__container{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 45px;
+  }
+
+  .section-hero__container {
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-hero {
+    padding-bottom: 29px;
+  }
+
+  .section-about-us {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-how-we-work {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section-faq {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .header-nav__search-icon {
     display: none;
   }
 
   .header__container {
     flex-direction: row-reverse;
-  }
-
-  .section-hero__container {
-    padding-top: 77px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 
   .section-hero__heading {
@@ -899,10 +955,7 @@ a {
     margin-right: auto;
     margin-left: auto;
   }
-  .container{
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+
 
   .section-hero__container {
     margin-right: 15px;
@@ -910,6 +963,31 @@ a {
     height: 307px;
   }
 
+  .about-us-big-card {
+    width: 100%;
+    height: 640px;
+    margin-bottom: 50px;
+    background-size: 100%;
+    background-position-y:top;
+  }
+
+  .about-us-big-card__footer {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 27%;
+    justify-content: space-between;
+    padding-right: 54px;
+    padding-left: 45px;
+    background-color: transparent;
+  }
+
+  .about-us-big-card__description {
+    color: black;
+  }
+
+  .about-us-big-card__button {
+    color: black;
+  }
   .about-us-card {
     flex-direction: column;
     border:none;
@@ -923,4 +1001,17 @@ a {
   .send-data__last-line {
     flex-direction: column;
   }
+
+  .how-we-work__buttons {
+    flex-direction: column-reverse;
+   }
+   .footer-columns {
+     padding: 0;
+   }
+   div {
+     font-size: 14px;
+   }
+   span {
+     font-size: 14px;
+   }
 }
